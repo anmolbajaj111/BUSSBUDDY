@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Getaways | BusBuddy</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #destinations {
+            margin-top: 50px!important;
+        }
+
+        .destination-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            background-color: white;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .destination-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .destination-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .destination-content {
+            padding: 20px;
+        }
+        
+        .rating {
+            color: #f1c40f;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" id="nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex flex-lg-row align-items-center w-100 px-5 pt-3">
+                    <div class="nav-links-container d-flex flex-lg-row">
+                        <a href="Index.html" class="nav-link"><i class="fa-duotone fa-solid fa-square"></i>Home</a>
+                        <a href="Index.html" class="nav-link"><i class="fa-duotone fa-solid fa-square"></i>Purpose</a>
+                        <a href="Routes.html" class="nav-link"><i class="fa-duotone fa-solid fa-square"></i>Routes</a>
+                        <a href="#" class="nav-link"><i class="fa-duotone fa-solid fa-square"></i>Weekend Gateways</a>
+                        <a href="Reviews.html" class="nav-link"><i class="fa-duotone fa-solid fa-square"></i>Reviews</a>
+                    </div>
+                    <div class="contact-container ms-auto">
+                        <a href="Contact.html" class="contact-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Popular Weekend Getaways</h2>
+                <p class="lead text-muted">Top destinations accessible by bus from LPU</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1697730426305-113c62434f97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW1yaXRzYXJ8ZW58MHx8MHx8fDA%3D"
+                            alt="Amritsar" class="destination-img">
+                        <span class="destination-badge">Most Popular</span>
+                        <div class="destination-content">
+                            <h3>Amritsar</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="ms-2">4.5</span>
+                            </div>
+                            <p>Visit the Golden Temple and experience Sikh culture in this spiritual city.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 3.5 hours</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 100</span>
+                            </div>
+                            <a href="amritsar.html" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB8Npm7Ys-ud3NS5mPDLhQkMK8I0STgIwhS1wArBMjxzKkq8Rr83wV_I7VBb2aK3eeOIuwJKvunyPFi9i1wzuKWqSDIDa0Ql2dWy7sCxgT8k96RuMO4NKWJaTr6wpcRMGKSK5NWA=w675-h390-n-k-no"
+                            alt="Chandigarh" class="destination-img">
+                        <div class="destination-content">
+                            <h3>Chandigarh</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">4.0</span>
+                            </div>
+                            <p>Explore the planned city with its beautiful gardens and modern architecture.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 4 hours</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 150</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1503265192943-9d7eea6fc77a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGhhcmFtc2hhbGF8ZW58MHx8MHx8fDA%3D"
+                            alt="Dharamshala" class="destination-img">
+                        <div class="destination-content">
+                            <h3>Dharamshala</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2">5.0</span>
+                            </div>
+                            <p>Experience Tibetan culture and beautiful mountain views in this hill station.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 6 hours</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 300</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b9/f5/78/caption.jpg?w=900&h=500&s=1"
+                            alt="Devi Talab Mandir" class="destination-img">
+                        <span class="destination-badge">Spiritual</span>
+                        <div class="destination-content">
+                            <h3>Devi Talab Mandir</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="ms-2">4.5</span>
+                            </div>
+                            <p>A peaceful temple with a sacred pond, perfect for spiritual retreats.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 1.5 hours</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 50</span>
+                            </div>
+                            <a href="devitalab.html" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1647264815094-4b8ca7391247?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Dalhousie" class="destination-img">
+                        <span class="destination-badge">Scenic</span>
+                        <div class="destination-content">
+                            <h3>Dalhousie</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">4.0</span>
+                            </div>
+                            <p>Beautiful hill station with colonial architecture and panoramic views.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 8 hours</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 400</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="destination-card">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB-G__8URJZW4vTdIsF_u5RE7cJ0ulyR7Qp5qCMwfTUKuBK98aYJW-I49fdqLO-T0gzbD2thhh7t8Tdf6SGVpbo30H9s5ekCJnJOUSlPRcycPrQi47pEFjZI4zExKOV62xdlWd0U=w675-h390-n-k-no"
+                            alt="Jalandhar" class="destination-img">
+                        <div class="destination-content">
+                            <h3>Jalandhar</h3>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">3.5</span>
+                            </div>
+                            <p>Nearby city with shopping, sports, and cultural attractions.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-bus me-1"></i> 1 hour</span>
+                                <span><i class="fas fa-rupee-sign me-1"></i> 20</span>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3 w-100">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Take a Weekend Getaway?</h2>
+                <p class="lead text-muted">Benefits of exploring nearby destinations</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Stress Relief</h3>
+                        <p>Short trips help reduce academic stress and refresh your mind for better focus.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Bonding Time</h3>
+                        <p>Great opportunity to bond with friends outside the campus environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Cultural Exposure</h3>
+                        <p>Experience local culture, food, and traditions beyond your university.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips -->
+    <section id="tips" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <h2 class="fw-bold mb-4">Student Travel Tips</h2>
+                        <div class="mb-4">
+                            <h4><i class="fas fa-wallet text-primary me-2"></i> Budgeting</h4>
+                            <ul class="mt-3">
+                                <li>Book bus tickets in advance for better prices</li>
+                                <li>Look for student discounts at attractions</li>
+                                <li>Share accommodation costs with friends</li>
+                                <li>Try local street food for affordable meals</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4><i class="fas fa-suitcase text-primary me-2"></i> Packing</h4>
+                            <ul class="mt-3">
+                                <li>Pack light - just essentials for short trips</li>
+                                <li>Carry a reusable water bottle</li>
+                                <li>Bring power banks and chargers</li>
+                                <li>Pack weather-appropriate clothing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <h2 class="fw-bold mb-4">Safety Advice</h2>
+                        <div class="mb-4">
+                            <h4><i class="fas fa-shield-alt text-primary me-2"></i> General Safety</h4>
+                            <ul class="mt-3">
+                                <li>Always travel in groups when possible</li>
+                                <li>Keep emergency contacts handy</li>
+                                <li>Inform someone about your travel plans</li>
+                                <li>Be aware of your surroundings</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4><i class="fas fa-bus text-primary me-2"></i> Bus Travel</h4>
+                            <ul class="mt-3">
+                                <li>Note your bus number and conductor details</li>
+                                <li>Keep valuables secure during travel</li>
+                                <li>Arrive at the stop 10 minutes early</li>
+                                <li>Save the bus company's contact number</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

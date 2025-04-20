@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Amritsar - BusBuddy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #f1f4f9, #dff1ff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .main-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .header-img {
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .title-text {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: -webkit-linear-gradient(45deg, #007bff, #6610f2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+    .card h4 {
+      color: #343a40;
+    }
+    .back-btn {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Image at the Top -->
+    <img src="goldentemple.jpg" alt="Golden Temple" class="header-img">
+
+    <!-- Heading -->
+    <h1 class="title-text">Explore Amritsar</h1>
+
+    <!-- Tourist Spots -->
+    <div class="card p-4">
+      <h4><i class="bi bi-map-fill text-primary"></i> Top Tourist Attractions</h4>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item">🌟 <strong>Golden Temple</strong> – Spiritual heart of Punjab</li>
+        <li class="list-group-item">🕊️ <strong>Jallianwala Bagh</strong> – Historical public garden</li>
+        <li class="list-group-item">🇮🇳 <strong>Wagah Border</strong> – Patriotic border ceremony</li>
+        <li class="list-group-item">🏛️ <strong>Partition Museum</strong> – Learn about 1947 history</li>
+      </ul>
+    </div>
+
+    <!-- Fare Details -->
+    <div class="card p-4">
+      <h4><i class="bi bi-bus-front-fill text-success"></i> Bus Details</h4>
+      <p class="mb-1"><strong>📍 Route:</strong> LPU → Jalandhar Bus Stand → Kartarpur → Amritsar</p>
+      <p class="mb-1"><strong>💰 Fare:</strong> ₹150 approx.</p>
+      <p><strong>🕒 Duration:</strong> 2.5 – 3 hours (depending on traffic)</p>
+    </div>
+
+    <!-- Back to Home -->
+    <div class="text-center back-btn">
+      <a href="index.html" class="btn btn-outline-primary btn-lg px-4 rounded-pill">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
